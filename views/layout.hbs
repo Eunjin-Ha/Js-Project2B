@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/javascripts/index.js" defer></script>
+    {{!-- use to add active class when user click header menu --}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <div class="header">
+      <a href="/" class="logo">Movie Archive</a>
+      <div class="header-right">
+        <a class="active" href="/">Home</a>
+        <a href="/projects/add_movies">Add Movies</a>
+        <a href="#"> | </a>
+        <a href="/register">Sign in</a>
+        <a href="/login">Login</a>
+      </div>
+    </div>
+    {{{body}}}
+  </body>
+</html>

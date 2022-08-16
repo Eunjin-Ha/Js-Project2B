@@ -1,0 +1,33 @@
+<h1>
+  {{title}}
+</h1>
+
+<form method="POST">
+  <label for="title">Title</label>
+  <input type="text" id="title" name="title" placeholder="Movie Title" required>
+
+  <label for="author">Author</label>
+  <input type="text" id="author" name="author">
+
+  <label for="genre">Genres</label>
+  <select id="genre" name="genre">
+    <option value="-">-</option>
+    <option value="Crime">Crime</option>
+    <option value="Comedy">Comedy</option>
+    <option value="Thriler">Thriler</option>
+    <option value="Action">Action</option>
+    <option value="Drama">Drama</option>
+    <option value="Others">Others</option>
+  </select>
+
+  <label for="rate">Rate</label>
+  <input type="text" id="rate" name="rate" required>
+
+  <label for="comments">Comments</label>
+  <input type="text" id="comments" name="comments" placeholder="Your comments" required>
+
+  <label for="createDate">Realsed Date</label>
+  <input type="date" id="createDate" name="createDate" required >
+
+  <input type="submit" value="Create">
+</form>

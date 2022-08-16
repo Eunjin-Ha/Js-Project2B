@@ -1,0 +1,32 @@
+<h1>
+  {{title}}
+</h1>
+
+<form method="POST">
+  <label for="title">Title</label>
+  <input type="text" id="title" name="title" value="{{project.title}}" required>
+
+  <label for="author">Author</label>
+  <input type="text" id="author" name="author" readonly value="Amy">
+
+  <label for="genre">Genres</label>
+     <select name="genre" id="genre">
+      {{selectOption 'Crime' project.genre }}
+      {{selectOption 'Comedy' project.genre}}
+      {{selectOption 'Thriler' project.genre}}
+      {{selectOption 'Action' project.genre}}
+      {{selectOption 'Drama' project.genre}}
+      {{selectOption 'Others' project.genre}}
+    </select>
+
+  <label for="rate">Rate</label>
+  <input type="text" id="rate" name="rate"  value="{{project.rate}}" required>
+
+  <label for="comments">Comments</label>
+  <input type="text" id="comments" name="comments" value="{{project.comments}}"  required>
+
+  <label for="createDate">Realsed Date</label>
+  <input type="date" id="createDate" name="createDate"  value="{{toShortDate project.createDate}}"  required >
+
+  <input type="submit" value="Edit">
+</form>
